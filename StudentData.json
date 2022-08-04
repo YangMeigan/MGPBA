@@ -1,0 +1,431 @@
+{
+	"Shiroko": {
+		"Name": "砂狼白子",
+		"Club": "对策委员会"
+	},
+    "Shiroko_RidingSuit": {
+		"Name": "砂狼白子(骑行)",
+		"Club": "对策委员会"
+	},
+	"Hoshino": {
+		"Name": "小鸟游星野",
+		"Club": "对策委员会"
+	},
+	"Hoshino_Swimsuit": {
+		"Name": "小鸟游星野(泳装)",
+		"Club": "对策委员会"
+	},
+	"Ayane": {
+		"Name": "奥空绫音",
+		"Club": "对策委员会"
+	},
+    "Ayane_Swimsuit": {
+		"Name": "奥空绫音(泳装)",
+		"Club": "对策委员会"
+	},
+	"Serika": {
+		"Name": "黑见茜香",
+		"Club": "对策委员会"
+	},
+    "Serika_Newyear": {
+		"Name": "黑见茜香(新年)",
+		"Club": "对策委员会"
+	},
+	"Nonomi": {
+		"Name": "十六夜野乃美",
+		"Club": "对策委员会"
+	},
+	"Nonomi_Swimsuit": {
+		"Name": "十六夜野乃美(泳装)",
+		"Club": "对策委员会"
+	},
+	"Iroha": {
+		"Name": "枣伊吕波",
+		"Club": "万魔殿"
+	},
+	"Hina": {
+		"Name": "空崎阳奈",
+		"Club": "纠察部"
+	},
+    "Hina_Swimsuit": {
+		"Name": "空崎阳奈(泳装)",
+		"Club": "纠察部"
+	},
+	"Ako": {
+		"Name": "天雨亚子",
+		"Club": "纠察部"
+	},
+	"Iori": {
+		"Name": "银镜伊织",
+		"Club": "纠察部"
+	},
+    "Iori_Swimsuit": {
+		"Name": "银镜伊织(泳装)",
+		"Club": "纠察部"
+	},
+	"Chinatsu": {
+		"Name": "日野宫千夏",
+		"Club": "纠察部"
+	},
+    "Chinatsu_Hotspring": {
+		"Name": "日野宫千夏(温泉)",
+		"Club": "纠察部"
+	},
+	"Aru": {
+		"Name": "陆八魔亚瑠",
+		"Club": "征信社 68"
+	},
+    "Aru_Newyear": {
+		"Name": "陆八魔亚瑠(新年)",
+		"Club": "征信社 68"
+	},
+	"Kayoko": {
+		"Name": "鬼方佳世子",
+		"Club": "征信社 68"
+	},
+	"Mutsuki": {
+		"Name": "浅黄无月",
+		"Club": "征信社 68"
+	},
+	"Mutsuki_Newyear": {
+		"Name": "浅黄无月(新年)",
+		"Club": "征信社 68"
+	},
+	"Haruka": {
+		"Name": "伊草遥香",
+		"Club": "征信社 68"
+	},
+	"Haruna": {
+		"Name": "黑馆羽留奈",
+		"Club": "美食研究会"
+	},
+	"Izumi": {
+		"Name": "狮子堂泉",
+		"Club": "美食研究会"
+	},
+    "Izumi_Swimsuit": {
+		"Name": "狮子堂泉(泳装)",
+		"Club": "美食研究会"
+	},
+	"Zunko": {
+		"Name": "赤司淳子",
+		"Club": "美食研究会"
+	},
+	"Akari": {
+		"Name": "鳄渊亚伽里",
+		"Club": "美食研究会"
+	},
+	"Fuuka": {
+		"Name": "爱清风华",
+		"Club": "供给部"
+	},
+	"Juri": {
+		"Name": "牛牧茱莉",
+		"Club": "供给部"
+	},
+	"Sena": {
+		"Name": "冰室濑奈",
+		"Club": "急救医学部"
+	},
+	"Yuuka": {
+		"Name": "早濑优香",
+		"Club": "研讨会"
+	},
+	"Midori": {
+		"Name": "才羽绿",
+		"Club": "游戏开发部"
+	},
+	"Yuzu": {
+		"Name": "花冈柚子",
+		"Club": "游戏开发部"
+	},
+	"Aris": {
+		"Name": "天童爱丽丝",
+		"Club": "游戏开发部"
+	},
+	"Momoi": {
+		"Name": "才羽桃井",
+		"Club": "游戏开发部"
+	},
+	"Hibiki": {
+		"Name": "猫冢响",
+		"Club": "工程师部"
+	},
+	"Utaha": {
+		"Name": "白石咏叶",
+		"Club": "工程师部"
+	},
+	"Kotori": {
+		"Name": "丰见亚都梨",
+		"Club": "工程师部"
+	},
+	"Chihiro": {
+		"Name": "各务千寻",
+		"Club": "贝里塔斯"
+	},
+	"Maki": {
+		"Name": "小涂真纪",
+		"Club": "贝里塔斯"
+	},
+	"Hare": {
+		"Name": "小钩晴",
+		"Club": "贝里塔斯"
+	},
+	"Kotama": {
+		"Name": "音濑小玉",
+		"Club": "贝里塔斯"
+	},
+	"Karin": {
+		"Name": "角楯花凛",
+		"Club": "C&C"
+	},
+    "Karin_Bunny": {
+		"Name": "角楯花凛(兔女郎)",
+		"Club": "C&C"
+	},
+	"Neru": {
+		"Name": "美甘宁瑠",
+		"Club": "C&C"
+	},
+	"Neru_Bunny": {
+		"Name": "美甘宁瑠(兔女郎)",
+		"Club": "C&C"
+	},
+	"Akane": {
+		"Name": "室笠朱音",
+		"Club": "C&C"
+	},
+	"Asuna": {
+		"Name": "一之濑明日奈",
+		"Club": "C&C"
+	},
+    "Asuna_Bunny": {
+		"Name": "一之濑明日奈(兔女郎)",
+		"Club": "C&C"
+	},
+	"Sumire": {
+		"Name": "乙花堇",
+		"Club": "训练部"
+	},
+	"Eimi": {
+		"Name": "和泉元英美",
+		"Club": "超现象特务部"
+	},
+	"Hifumi": {
+		"Name": "阿慈谷日步美",
+		"Club": "补课部"
+	},
+    "Hifumi_Swimsuit": {
+		"Name": "阿慈谷日步美(泳装)",
+		"Club": "补课部"
+	},
+	"Azusa": {
+		"Name": "白洲梓",
+		"Club": "补课部"
+	},
+    "Azusa_Swimsuit": {
+		"Name": "白洲梓(泳装)",
+		"Club": "补课部"
+	},
+	"Koharu": {
+		"Name": "下江小春",
+		"Club": "补课部"
+	},
+	"Hanako": {
+		"Name": "浦和花子",
+		"Club": "补课部"
+	},
+	"Tsurugi": {
+		"Name": "剑先弦生",
+		"Club": "实现正义部"
+	},
+    "Tsurugi_Swimsuit": {
+		"Name": "剑先弦生(泳装)",
+		"Club": "实现正义部"
+	},
+	"Mashiro": {
+		"Name": "静山麻白",
+		"Club": "实现正义部"
+	},
+    "Mashiro_Swimsuit": {
+		"Name": "静山麻白(泳装)",
+		"Club": "实现正义部"
+	},
+	"Hasumi": {
+		"Name": "羽川莲实",
+		"Club": "实现正义部"
+	},
+	"Natsu": {
+		"Name": "柚鸟夏",
+		"Club": "放学后的甜点部"
+	},
+	"Airi": {
+		"Name": "栗村爱莉",
+		"Club": "放学后的甜点部"
+	},
+	"Yoshimi": {
+		"Name": "伊原木喜美",
+		"Club": "放学后的甜点部"
+	},
+	"Hanae": {
+		"Name": "朝颜花绘",
+		"Club": "救援骑士团"
+	},
+	"Serina": {
+		"Name": "鹫见芹奈",
+		"Club": "救援骑士团"
+	},
+	"Ui": {
+		"Name": "古关忧",
+		"Club": "图书部"
+	},
+	"Shimiko": {
+		"Name": "圆堂志美子",
+		"Club": "图书部"
+	},
+	"Suzumi": {
+		"Name": "守月铃美",
+		"Club": "三一自卫队"
+	},
+	"Hinata": {
+		"Name": "若叶日向",
+		"Club": "修女会"
+	},
+	"Mari": {
+		"Name": "伊落玛丽",
+		"Club": "修女会"
+	},
+	"Shizuko": {
+		"Name": "河和静子",
+		"Club": "节庆营运管理部"
+	},
+    
+	"Shizuko_Swimsuit": {
+		"Name": "河和静子(泳装)",
+		"Club": "节庆营运管理部"
+	},
+	"Pina": {
+		"Name": "朝比奈菲娜",
+		"Club": "节庆营运管理部"
+	},
+	"Mimori": {
+		"Name": "水羽三森",
+		"Club": "执行部"
+	},
+	"Kaede": {
+		"Name": "勇美枫",
+		"Club": "执行部"
+	},
+	"Tsubaki": {
+		"Name": "春日椿",
+		"Club": "执行部"
+	},
+	"Chise": {
+		"Name": "和乐知世",
+		"Club": "阴阳部"
+	},
+	"Chise_Swimsuit": {
+		"Name": "和乐知世(泳装)",
+		"Club": "阴阳部"
+	},
+	"Izuna": {
+		"Name": "久田伊树菜",
+		"Club": "忍法研究部"
+	},
+	"Izuna_Swimsuit": {
+		"Name": "久田伊树菜(泳装)",
+		"Club": "忍法研究部"
+	},
+	"Tsukuyo": {
+		"Name": "大野筑夜",
+		"Club": "忍法研究部"
+	},
+	"Michiru": {
+		"Name": "千鸟满",
+		"Club": "忍法研究部"
+	},
+	"Wakamo": {
+		"Name": "狐坂若藻",
+		"Club": "停学"
+	},
+	"Wakamo_Swimsuit": {
+		"Name": "狐坂若藻(泳装)",
+		"Club": "停学"
+	},
+	"Shun": {
+		"Name": "春原旬",
+		"Club": "梅花园"
+	},
+	"Shun_Small": {
+		"Name": "春原旬(幼女)",
+		"Club": "梅花园"
+	},
+	"Saya": {
+		"Name": "药子沙耶",
+		"Club": "锻炼屋"
+	},
+	"Saya_Casual": {
+		"Name": "药子沙耶(私服)",
+		"Club": "锻炼屋"
+	},
+	"Cherino": {
+		"Name": "连河洁莉诺",
+		"Club": "赤冬事务局"
+	},
+    "Cherino_Hotspring": {
+		"Name": "连河洁莉诺(温泉)",
+		"Club": "赤冬事务局"
+	},
+	"Marina": {
+		"Name": "池仓玛丽娜",
+		"Club": "赤冬事务局"
+	},
+	"Tomoe": {
+		"Name": "佐城智惠",
+		"Club": "赤冬事务局"
+	},
+	"Nodoka": {
+		"Name": "天见和香",
+		"Club": "227号特别班"
+	},
+    "Nodoka_Hotspring": {
+		"Name": "天见和香(温泉)",
+		"Club": "227号特别班"
+	},
+	"Kirino": {
+		"Name": "中务桐乃",
+		"Club": "生活安全局"
+	},
+	"Fubuki": {
+		"Name": "合欢垣吹雪",
+		"Club": "生活安全局"
+	},
+	"Miyako": {
+		"Name": "月雪宫子",
+		"Club": "Rabbit 小队"
+	},
+	"Saki": {
+		"Name": "空井咲",
+		"Club": "Rabbit 小队"
+	},
+	"Miyu": {
+		"Name": "霞泽美游",
+		"Club": "Rabbit 小队"
+	},
+	"Hiyori": {
+		"Name": "槌永日和",
+		"Club": "阿里乌斯特殊小队"
+	},
+	"Misaki": {
+		"Name": "戒野美咲",
+		"Club": "阿里乌斯特殊小队"
+	},
+	"Atsuko": {
+		"Name": "秤亚津子",
+		"Club": "阿里乌斯特殊小队"
+	},
+	"Miku": {
+		"Name": "初音未来",
+		"Club": null
+	}
+}
