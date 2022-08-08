@@ -3,7 +3,7 @@
 		"Name": "砂狼白子",
 		"Club": "对策委员会"
 	},
-    "Shiroko_RidingSuit": {
+	"Shiroko_RidingSuit": {
 		"Name": "砂狼白子(骑行)",
 		"Club": "对策委员会"
 	},
@@ -19,7 +19,7 @@
 		"Name": "奥空绫音",
 		"Club": "对策委员会"
 	},
-    "Ayane_Swimsuit": {
+	"Ayane_Swimsuit": {
 		"Name": "奥空绫音(泳装)",
 		"Club": "对策委员会"
 	},
@@ -27,7 +27,7 @@
 		"Name": "黑见茜香",
 		"Club": "对策委员会"
 	},
-    "Serika_Newyear": {
+	"Serika_Newyear": {
 		"Name": "黑见茜香(新年)",
 		"Club": "对策委员会"
 	},
@@ -47,7 +47,7 @@
 		"Name": "空崎阳奈",
 		"Club": "纠察部"
 	},
-    "Hina_Swimsuit": {
+	"Hina_Swimsuit": {
 		"Name": "空崎阳奈(泳装)",
 		"Club": "纠察部"
 	},
@@ -59,7 +59,7 @@
 		"Name": "银镜伊织",
 		"Club": "纠察部"
 	},
-    "Iori_Swimsuit": {
+	"Iori_Swimsuit": {
 		"Name": "银镜伊织(泳装)",
 		"Club": "纠察部"
 	},
@@ -67,7 +67,7 @@
 		"Name": "日野宫千夏",
 		"Club": "纠察部"
 	},
-    "Chinatsu_Hotspring": {
+	"Chinatsu_Hotspring": {
 		"Name": "日野宫千夏(温泉)",
 		"Club": "纠察部"
 	},
@@ -75,7 +75,7 @@
 		"Name": "陆八魔亚瑠",
 		"Club": "征信社 68"
 	},
-    "Aru_Newyear": {
+	"Aru_Newyear": {
 		"Name": "陆八魔亚瑠(新年)",
 		"Club": "征信社 68"
 	},
@@ -103,7 +103,7 @@
 		"Name": "狮子堂泉",
 		"Club": "美食研究会"
 	},
-    "Izumi_Swimsuit": {
+	"Izumi_Swimsuit": {
 		"Name": "狮子堂泉(泳装)",
 		"Club": "美食研究会"
 	},
@@ -179,7 +179,7 @@
 		"Name": "角楯花凛",
 		"Club": "C&C"
 	},
-    "Karin_Bunny": {
+	"Karin_Bunny": {
 		"Name": "角楯花凛(兔女郎)",
 		"Club": "C&C"
 	},
@@ -199,7 +199,7 @@
 		"Name": "一之濑明日奈",
 		"Club": "C&C"
 	},
-    "Asuna_Bunny": {
+	"Asuna_Bunny": {
 		"Name": "一之濑明日奈(兔女郎)",
 		"Club": "C&C"
 	},
@@ -215,7 +215,7 @@
 		"Name": "阿慈谷日步美",
 		"Club": "补课部"
 	},
-    "Hifumi_Swimsuit": {
+	"Hifumi_Swimsuit": {
 		"Name": "阿慈谷日步美(泳装)",
 		"Club": "补课部"
 	},
@@ -223,7 +223,7 @@
 		"Name": "白洲梓",
 		"Club": "补课部"
 	},
-    "Azusa_Swimsuit": {
+	"Azusa_Swimsuit": {
 		"Name": "白洲梓(泳装)",
 		"Club": "补课部"
 	},
@@ -239,7 +239,7 @@
 		"Name": "剑先弦生",
 		"Club": "实现正义部"
 	},
-    "Tsurugi_Swimsuit": {
+	"Tsurugi_Swimsuit": {
 		"Name": "剑先弦生(泳装)",
 		"Club": "实现正义部"
 	},
@@ -247,7 +247,7 @@
 		"Name": "静山麻白",
 		"Club": "实现正义部"
 	},
-    "Mashiro_Swimsuit": {
+	"Mashiro_Swimsuit": {
 		"Name": "静山麻白(泳装)",
 		"Club": "实现正义部"
 	},
@@ -372,7 +372,7 @@
 		"Name": "连河洁莉诺",
 		"Club": "赤冬事务局"
 	},
-    "Cherino_Hotspring": {
+	"Cherino_Hotspring": {
 		"Name": "连河洁莉诺(温泉)",
 		"Club": "赤冬事务局"
 	},
@@ -388,7 +388,7 @@
 		"Name": "天见和香",
 		"Club": "227号特别班"
 	},
-    "Nodoka_Hotspring": {
+	"Nodoka_Hotspring": {
 		"Name": "天见和香(温泉)",
 		"Club": "227号特别班"
 	},
