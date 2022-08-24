@@ -3,7 +3,7 @@
 		"Name": "砂狼白子",
 		"Club": "对策委员会"
 	},
-	"Shiroko_RidingSuit": {
+	"Shiroko_Ridingsuit": {
 		"Name": "砂狼白子(骑行)",
 		"Club": "对策委员会"
 	},
@@ -64,11 +64,11 @@
 		"Club": "纠察部"
 	},
 	"Chinatsu": {
-		"Name": "日野宫千夏",
+		"Name": "火宫千夏",
 		"Club": "纠察部"
 	},
 	"Chinatsu_Hotspring": {
-		"Name": "日野宫千夏(温泉)",
+		"Name": "火宫千夏(温泉)",
 		"Club": "纠察部"
 	},
 	"Aru": {
@@ -429,7 +429,15 @@
 		"Club": null
 	},
 	"Saori": {
-		"Name": "锭前沙织",
+		"Name": "锭前纱织",
 		"Club": "阿里乌斯特殊小队"
+	},
+	"Kazusa": {
+		"Name": "杏山和纱",
+		"Club": "放学后的甜点部"
+	},
+	"Moe": {
+		"Name": "风仓萌绘",
+		"Club": "Rabbit 小队"
 	}
 }
