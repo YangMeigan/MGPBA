@@ -151,8 +151,16 @@
 		"Name": "猫冢响",
 		"Club": "工程师部"
 	},
+	"Hibiki_Cheergroup": {
+		"Name": "猫冢响(应援团)",
+		"Club": "工程师部"
+	},
 	"Utaha": {
 		"Name": "白石咏叶",
+		"Club": "工程师部"
+	},
+	"Utaha_Cheergroup": {
+		"Name": "白石咏叶(应援团)",
 		"Club": "工程师部"
 	},
 	"Kotori": {
@@ -443,5 +451,9 @@
 	"Kokona": {
 		"Name": "春园心菜",
 		"Club": "梅花园"
+	},
+	"Noa": {
+		"Name": "生盐乃爱",
+		"Club": "研讨会"
 	}
 }
