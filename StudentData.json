@@ -131,6 +131,11 @@
 		"Name": "早濑优香",
 		"Club": "研讨会"
 	},
+	
+	"Yuuka_Sportsuit": {
+		"Name": "早濑优香",
+		"Club": "研讨会"
+	},
 	"Midori": {
 		"Name": "才羽绿",
 		"Club": "游戏开发部"
@@ -267,6 +272,10 @@
 		"Name": "羽川莲实",
 		"Club": "实现正义部"
 	},
+	"Hasumi_Sportsuit": {
+		"Name": "羽川莲实(体操服)",
+		"Club": "实现正义部"
+	},
 	"Natsu": {
 		"Name": "柚鸟夏",
 		"Club": "放学后的甜点部"
@@ -305,6 +314,11 @@
 	},
 	"Mari": {
 		"Name": "伊落玛丽",
+		"Club": "修女会"
+	},
+	
+	"Mari_Sportsuit": {
+		"Name": "伊落玛丽(体操服)",
 		"Club": "修女会"
 	},
 	"Shizuko": {
