@@ -319,7 +319,6 @@
 		"Name": "伊落玛丽",
 		"Club": "修女会"
 	},
-	
 	"Mari_Sportsuit": {
 		"Name": "伊落玛丽(体操服)",
 		"Club": "修女会"
@@ -328,7 +327,6 @@
 		"Name": "河和静子",
 		"Club": "节庆营运管理部"
 	},
-
 	"Shizuko_Swimsuit": {
 		"Name": "河和静子(泳装)",
 		"Club": "节庆营运管理部"
@@ -445,6 +443,10 @@
 		"Name": "霞泽美游",
 		"Club": "Rabbit 小队"
 	},
+	"Moe": {
+		"Name": "风仓萌绘",
+		"Club": "Rabbit 小队"
+	},
 	"Hiyori": {
 		"Name": "槌永日和",
 		"Club": "阿里乌斯特殊小队"
@@ -468,10 +470,6 @@
 	"Kazusa": {
 		"Name": "杏山和纱",
 		"Club": "放学后的甜点部"
-	},
-	"Moe": {
-		"Name": "风仓萌绘",
-		"Club": "Rabbit 小队"
 	},
 	"Kokona": {
 		"Name": "春园心菜",
