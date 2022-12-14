@@ -295,8 +295,16 @@
 		"Name": "朝颜花绘",
 		"Club": "救援骑士团"
 	},
+	"Hanae_Christmas": {
+		"Name": "朝颜花绘(圣诞节)",
+		"Club": "救援骑士团"
+	},
 	"Serina": {
 		"Name": "鹫见芹奈",
+		"Club": "救援骑士团"
+	},
+	"Serina_Christmas": {
+		"Name": "鹫见芹奈(圣诞节)",
 		"Club": "救援骑士团"
 	},
 	"Ui": {
