@@ -1,6 +1,8 @@
 "use strict";
 window.RLQ = window.RLQ || [];
 window.RLQ.push(async () => {
+    const studentStatList = ['MaxHP','AttackPower','DefensePower','HealPower','AccuracyPoint','DodgePoint','CriticalPoint','CriticalChanceResistPoint','CriticalDamageRate','CriticalDamageResistRate','StabilityPoint','Range','OppressionPower','OppressionResist','HealEffectivenessRate','AmmoCount', 'AmmoCost'];
+
     await mw.loader.using(["mediawiki.api", "ext.gadget.LocalObjectStorage"]);
     const storage = new LocalObjectStorage("ba-charinfo");
     let rawData = storage.getItem("data");
@@ -21,7 +23,7 @@ window.RLQ.push(async () => {
         storage.setItem("last-fetched", Date.now());
         updatedNow = true;
     };
-    if (!rawData || Date.now() - storage.getItem("last-fetched") > 30 * 24 * 60 * 60 * 1000) {
+    if (!rawData || Date.now() - storage.getItem("last-fetched") > 15 * 24 * 60 * 60 * 1000) {
         await updateCache();
     }
 
@@ -33,7 +35,8 @@ window.RLQ.push(async () => {
         starscale_healing = [1, 1.075, 1.175, 1.295, 1.445],
         striker_bonus_coefficient = { MaxHP: 0.1, AttackPower: 0.1, DefensePower: 0.05, HealPower: 0.05 };
     class CharacterStats {
-        constructor(character, level, stargrade) {
+        constructor(character, level = 1, stargrade) {
+            if(!stargrade) stargrade = character.Rate;
             const levelscale = ((level - 1) / 99).toFixed(4);
             const MaxHP = Math.ceil(
                 (
@@ -171,9 +174,15 @@ window.RLQ.push(async () => {
         }
     }
 
+    /*function recalculateStats(character, level = 1, stargrade){//还是按卡面现实
+        if(!stargrade) stargrade = character.Rate;
+        student = new CharacterStats(character, level, stargrade)
+        return student;
+    }*/
+
     $(".bachar-container").each(async (_, ele) => {
         const $ele = $(ele);
-        const charName = $ele.data("ba-name");
+        const charName = $ele.data("ba-name")
         if (!charName) {
             console.error("[BACharInfo] No character name found", ele);
             return;
@@ -188,10 +197,11 @@ window.RLQ.push(async () => {
             }
         }
         $ele.data("ba-stats", new CharacterStats(character));
+        var studentdata = new CharacterStats(character)
 
         // Replace slider
         $ele.find(".bachar-char-expbar").replaceWith(
-            '<input class="bachar-char-expbar bachar-all-unitalic" type="range" min="1" max="100" value="1" step="1" />',
+            '<input class="bachar-char-expbar bachar-all-unitalic" type="range" min="1" max="83" value="1" step="1" />',
         );
         const $expLv = $ele.find(".bachar-char-explv"),
             $expBar = $ele.find(".bachar-char-expbar");
@@ -213,6 +223,19 @@ window.RLQ.push(async () => {
             background: #2d4c72;
             cursor: pointer;
         }`);
-        $expBar.on("input", () => $expLv.text($expBar.val())).trigger("input");
+
+        // 临时性
+        studentStatList.forEach(statname => {
+            $ele.find(`.bachar-stats-${statname} .bachar-stats-value`).text(studentdata.stats[statname][0])
+        })
+
+        $expBar.on("input", () => {
+            $expLv.text($expBar.val());
+            studentdata = new CharacterStats(character, $expBar.val())
+            studentStatList.forEach(statname => {
+                $ele.find(`.bachar-stats-${statname} .bachar-stats-value`).text(studentdata.stats[statname][0])
+            })
+            //$ele.find(`.bachar-stats-CriticalDamageRate .bachar-stats-value`).text(`${studentdata.stats[CriticalDamageRate][0]/100}%`)
+        }).trigger("input");
     });
 });
