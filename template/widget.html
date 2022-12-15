@@ -1,0 +1,196 @@
+<noinclude>Only for [[MediaWiki:BatchFFD]]</noinclude><includeonly><!--{if !isset($wgBatchFFD) || !$wgBatchFFD}--><!--{assign var="wgBatchFFD" value=true scope="global"}--><script>
+"use strict";
+window.RLQ = window.RLQ || [];
+window.RLQ.push(async () => {
+    const $content = $("#mw-content-text");
+    $("#p-views").remove();
+    $("#siteSub").remove();
+    $("#footer-info").remove();
+    await mw.loader.using("mediawiki.api");
+    const config = mw.config.get(["wgUserGroups", "wgUserName", "wgVersion", "wgServer", "wgScriptPath"]);
+
+    if (!config.wgUserGroups.includes("patroller") && !config.wgUserGroups.includes("sysop")) {
+        if (config.wgVersion.startsWith("1.31")) {
+            await mw.loader.using("mediawiki.api.messages");
+        }
+        await new mw.Api().loadMessagesIfMissing(["pagetitle", "permissionserrors", "permissionserrorstext-withaction", "badaccess-groups", "group-sysop", "comma-separator", "group-patroller"]);
+        document.title = mw.msg("pagetitle", mw.msg("permissionserrors"));
+        $("#firstHeading").text(mw.msg("permissionserrors"));
+        // Hardcode grouppage to reduce API calls + extra variant conversion
+        $content.html(`<p>
+        ${mw.msg("permissionserrorstext-withaction", 1, wgULS("批量挂删页面", "批量掛刪頁面"))}
+        </p><p>
+        ${mw.msg("badaccess-groups", `
+            <a href="${mw.util.getUrl(`萌娘百科:${mw.msg("group-sysop")}`)}" title=${mw.msg("group-sysop")}>
+                ${mw.msg("group-sysop")}
+            </a>
+            ${mw.msg("comma-separator")}
+            <a href="${mw.util.getUrl(`萌娘百科:${mw.msg("group-patroller")}`)}" title=${mw.msg("group-patroller")}>
+                ${mw.msg("group-patroller")}
+            </a>
+        `, 2)}
+        </p>`);
+        return;
+    }
+
+    await mw.loader.using(["mediawiki.Title", "oojs-ui"]);
+    const ffdDetails = {
+        "zh.moegirl.org.cn": { t: "即将删除", s: "[[MediaWiki:BatchFFD|批量挂删]]：" },
+        "commons.moegirl.org.cn": { t: "即将删除", s: "[[zh:MediaWiki:BatchFFD|批量挂删]]：" },
+        "en.moegirl.org.cn": { t: "Awaiting deletion", s: "[[zh:MediaWiki:BatchFFD|Batch FFD]]：" },
+        "ja.moegirl.org.cn": { t: "Sakujo", s: "[[zh:MediaWiki:BatchFFD|複数のページを一括削除]]：" },
+        "library.moegirl.org.cn": { t: "即将删除", s: "[[zh:MediaWiki:BatchFFD|批量挂删]]：" },
+    };
+    const details = ffdDetails[location.hostname];
+
+    const storage = new LocalObjectStorage("BatchFFD");
+    const localCache = await new Promise((resolve) => {
+        const cache = storage.getItem("deletereason-cache");
+        if (Array.isArray(cache)) {
+            resolve(cache);
+            return;
+        }
+        if (storage.getItem("deletereason-fetching")) {
+            const c = setInterval(() => {
+                if (!storage.getItem("deletereason-fetching")) {
+                    clearInterval(c);
+                    resolve(storage.getItem("deletereason-cache"));
+                }
+            });
+            return;
+        }
+        storage.setItem("deletereason-fetching", true);
+        $.get(`${config.wgServer + config.wgScriptPath}/MediaWiki:Deletereason-dropdown?action=raw`, (reasons) => {
+        const cache = reasons.split(/\n+/).map((reason) => {
+                if (reason.length === 0 || !reason.startsWith("*")) {
+                    return;
+                }
+                if (/^\*[^*]/.test(reason)) {
+                    return {
+                        data: "",
+                        label: `== ${reason.slice(1).trim()} ==`,
+                    };
+                } else if (/^\*\*[^*]/.test(reason)) {
+                    return {
+                        data: reason.slice(2).trim(),
+                    };
+                }
+            });
+            storage.setItem("deletereason-cache", cache);
+            storage.setItem("deletereason-fetching", false);
+            resolve(cache);
+        });
+    });
+
+    const fieldset = new OO.ui.FieldsetLayout();
+    const ffdList = new OO.ui.MultilineTextInputWidget({
+        placeholder: wgULS("页面1\n页面2\n页面3|不再使用", "頁面1\n頁面2\n頁面3|不再使用"),
+        autosize: true,
+        validate: "non-empty",
+    });
+    const ffdReason = new OO.ui.ComboBoxInputWidget({
+        options: localCache,
+        validate: "non-empty",
+    });
+    const ffdWatchlist = new OO.ui.DropdownInputWidget({
+        options: [
+            { data: "preferences", label: wgULS("与参数设置同步", "與參數設定同步") },
+            { data: "nochange", label: "不更改" },
+            { data: "watch", label: wgULS("加入监视列表", "加入監視列表") },
+            { data: "unwatch", label: wgULS("取消监视", "取消監視") },
+        ],
+        value: "nochange",
+    });
+    const submit = new OO.ui.ButtonWidget({
+        label: wgULS("确认", "確認"),
+        icon: "check",
+        flags: ["primary", "progressive"],
+    });
+    fieldset.addItems([
+        new OO.ui.FieldLayout(ffdList, {
+            label: wgULS("挂删列表", "掛刪列表"),
+            align: "top",
+        }),
+        new OO.ui.FieldLayout(ffdReason, {
+            label: wgULS("挂删原因", "掛刪原因"),
+            align: "top",
+        }),
+        new OO.ui.FieldLayout(ffdWatchlist, {
+            label: wgULS("监视页面", "監視頁面"),
+            align: "top",
+        }),
+        new OO.ui.FieldLayout(submit),
+    ]);
+
+    $content.empty().append(wgULS("<p>大量挂删页面之工具，请慎用！</p><p>如有滥用之行为，后果请阁下自行承担。</p><hr /><p>请在挂删列表填写页面，每行一个，不需要加<code>[[]]</code>。</p><p>若个别页面的挂删原因与下方选择不符，请使用<code>页面名|原因</code>格式单独标注。</p>", "<p>大量掛刪頁面之工具，請慎用！</p><p>如有濫用之行為，後果請阁下自行承擔。</p><hr /><p>請在掛刪列表填寫頁面，每行一個，不需要加<code>[[]]</code>。</p><p>若個別頁面的掛刪原因與下方選擇不符，請使用<code>頁面名|原因</code>格式單獨標注。</p>"), fieldset.$element);
+
+    submit.on("click", async () => {
+        if (submit.getFlags().includes("destructive")) {
+            location.reload();
+        }
+        try {
+            await Promise.all([ffdList.getValidity(), ffdReason.getValidity()]);
+        } catch {
+            return;
+        }
+
+        let log = $("#batchFFD-log");
+        if (!log[0]) {
+            log = $('<ul id="batchFFD-log"></ul>');
+            $content.append("<hr />", log);
+        } else {
+            log.empty();
+        }
+
+        const defaultReason = ffdReason.setDisabled(true).getValue();
+        const watchlist = ffdWatchlist.setDisabled(true).getValue();
+        const pageList = ffdList.setDisabled(true).getValue().split("\n").map((line) => {
+            const [title, reason] = line.split("|");
+            return {
+                title,
+                reason: reason || defaultReason,
+            };
+        });
+        console.log("[BatchFFD] Got list of pages and reasons.", pageList);
+
+        submit.setFlags({
+            progressive: false,
+            destructive: true,
+        }).setIcon("close").setLabel(wgULS("紧急停止", "緊急停止"));
+
+        const api = new mw.Api();
+        const bot = config.wgUserGroups.includes("flood");
+        const failed = [];
+        await Promise.allSettled(pageList.map(({ title, reason }) => {
+            return api.postWithToken("csrf", {
+                format: "json",
+                action: "edit",
+                watchlist,
+                title,
+                text: `<noinclude>{{${details.t}|1=reason|user=${config.wgUserName}}}</noinclude>`,
+                summary: `${details.s}${reason}`,
+                tags: "Automation tool",
+                nocreate: true,
+                bot,
+            }).done((r) => {
+                log.append(`<li>${title}：${wgULS("挂删成功", "掛刪成功")}</li>`);
+                console.log(`[BatchFFD] Flagged ${title}`, r);
+            }).fail((e) => {
+                log.append(`<li class="error">${title}：${wgULS("挂删失败", "掛刪失敗")}（${e}）</li>`);
+                failed.push(`${title}|${reason}`);
+                console.error(`[BatchFFD] Failed ${title}`, e);
+            });
+        }));
+
+        ffdList.setValue(failed.join("\n"));
+
+        submit.setFlags({
+            progressive: true,
+            destructive: false,
+        }).setIcon("check").setLabel(wgULS("确认", "確認"));
+        ffdReason.setDisabled(false);
+        ffdWatchlist.setDisabled(false);
+        ffdList.setDisabled(false);
+    });
+});
+</script><!--{/if}--></includeonly>

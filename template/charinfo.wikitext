@@ -1,0 +1,126 @@
+<noinclude>{{doc}}[[CAT:蔚蓝档案模板]][[Category:使用模板样式的模板]]</noinclude>
+<includeonly><templatestyles src="Template:Sandbox/一位史蒂夫/3/bac.css" /><templatestyles src="Template:Sandbox/一位史蒂夫/2/bg.css" />
+<div class="ba-charinfo"><div class="ba-charmain">
+<div class="ba-illust-container">
+<div class="ba-illust-cv"><span class="ba-label">画/</span>[[{{{画师|}}}|{{color|#0088FF|{{{画师|？？？}}}}}]]<br /><span class="ba-label">音/</span>[[{{{CV|}}}|{{color|#0088FF|{{{CV|？？？}}}}}]]{{ac|{{{CV|}}}}}</div>
+<div class="ba-label ba-sabun-label">{{#switch:{{{星级|}}}|1=[[File:BA Pic Star 1.png|初始星级为一星|link=]]|2=[[File:BA Pic Star 2.png|初始星级为二星|link=]]|3=[[File:BA Pic Star 3.png|初始星级为三星|link=]]|#default=?}}</div>
+<div class="ba-illust">{{useImg|BA_{{{Name|}}}{{#if:{{{Alt|}}}|_{{{Alt}}}}}.png|height:600px}}</div>
+</div>
+<div class="ba-name-container">
+<div class="ba-school ba-label ba-skew"><div><span>{{{学校|未知校园}}}</span><span class="ba-club">{{{社团|未知社团}}}</span></div></div>
+-{<div class="ba-name-ja" lang="ja" xml:lang="ja"><ruby><rb data-id="template-ruby">{{{日文姓|}}}<span class="template-ruby-hidden">（</span></rb><rt>{{{Ruby|}}}</rt><span class="template-ruby-hidden">）</span></ruby><span class="ba-noselect">&emsp;</span>{{{日文名|}}}</div>}-
+<div class="ba-name" style="text-decoration:underline 5px #FF0;text-underline-offset:5px">{{{中文姓|}}}&emsp;{{{中文名|}}}</div>
+</div>
+<div class="ba-stats-container">
+<div class="ba-stats-tabs ba-tabs Tabs"  data-label-color="#33DDFF" data-label-background-color="#375375" data-text-padding="1.5px">
+<div class="Tab">
+<div class="TabLabelText" style="justify-content:stretch;flex-grow:1;"><span style="color:#33DDFF;">学生</span></div>
+<div class="TabContentText">
+<div class="ba-data-container" data-ba-name="{{{Name|}}}">
+<div class="ba-data-left">
+<div class="ba-label">最大体力<sup><span title=此面板展示学生在★5、LV.100、无加成时的数据。>'''㊟'''</span></sup></div><div>{{{体力|?}}}</div>
+<div class="ba-label">攻击力<sup><span title=此面板展示学生在★5、LV.100、无加成时的数据。>'''㊟'''</span></sup></div><div>{{{攻击力|?}}}</div>
+<div class="ba-label">防御力<sup><span title=此面板展示学生在★5、LV.100、无加成时的数据。>'''㊟'''</span></sup></div><div>{{{防御力|?}}}</div>
+<div class="ba-label">治愈力<sup><span title=此面板展示学生在★5、LV.100、无加成时的数据。>'''㊟'''</span></sup></div><div>{{{治愈力|?}}}</div>
+<div class="ba-label">命中数值</div><div>{{{命中数值|?}}}</div>
+<div class="ba-label">回避数值</div><div>{{{回避数值|?}}}</div>
+<div class="ba-label">一般攻击射程</div><div>{{{射程|?}}}</div>
+</div>
+<div class="ba-data-right">
+<div class="ba-label">暴击数值</div><div>{{{暴击数值|?}}}</div>
+<div class="ba-label">暴击伤害</div><div>{{{暴击伤害|?}}}</div>
+<div class="ba-label">群控强化力</div><div>{{{群控强化力|?}}}</div>
+<div class="ba-label">群控抵抗力</div><div>{{{群控抵抗力|?}}}</div>
+<div class="ba-label">弹药数量</div><div>{{{弹药数量|?}}}</div>
+<div class="ba-label">弹药消耗</div><div>{{{弹药消耗|?}}}</div>
+<div class="ba-label">稳定性</div><div>{{{稳定性|?}}}</div>
+</div>
+<div class="ba-attribution plainlinks">数据来源：[https://lonqie.github.io/SchaleDB SchaleDB]</div>
+</div>
+<div class="ba-misc-container">
+<!--<div class="ba-profession ba-skew"><div class="ba-profession-icon">[[File:BA_Prof_{{{职业|}}}白.png|35px|link=]]</div><div><span title="职业">'''{{{职业|未知}}}</span>·<span class="ba-profession-type" title="类型">{{#switch:{{{战术作用|}}}|1={{color|#F00|STRIKER}}|2={{color|#07F|SPECIAL}}|#default=UNKNOWN}}'''</span></div></div>-->
+<div class="ba-attack-info">
+<div class="ba-label">类&emsp;&emsp;型</div><div class="ba-profession-type" title="类型">{{#switch:{{{战术作用|}}}|1={{color|#F00|STRIKER}}|2={{color|#07F|SPECIAL}}|#default=UNKNOWN}}'''</div>
+<div class="ba-label">职&emsp;&emsp;业</div><div class="ba-block-label ba-profession-label" title="职业"><div class="ba-profession-icon">[[File:BA_Prof_{{{职业|}}}白.png|20px|link=]]</div><span>'''{{{职业|未知}}}</span></div>
+<div class="ba-label">攻击类型</div><div class="ba-block-label" style="background:#{{#switch:{{{攻击类型|}}}|爆炸=920000|贯穿=BB8800|神秘=226F9F|攻城=673799|#default=777777}}" title="攻击类型">{{{攻击类型|一般}}}</div>
+<div class="ba-label">防御类型</div><div class="ba-block-label" style="background:#{{#switch:{{{防御类型|}}}|轻=920000|重=BB8800|特殊=226F9F|#default=777777}}" title="防御类型">{{{防御类型|}}}装甲</div>
+<div class="ba-label">站位范围</div><div class="ba-pos-weapon" title="站位范围">{{#switch:{{{站位|}}}|F=FRONT|M=MIDDLE|B=BACK|#default=???}}</div>
+<div class="ba-label">使用武器</div><div class="ba-pos-weapon" title="使用武器">{{#if:{{{掩蔽|}}}|[[File:BA_Icon_Shield.png|22px|掩蔽|link=]]}}&nbsp;{{{武器|?}}}</div>
+</div>
+<div class="ba-terrain-ratings">
+<div class="ba-terrain-icon" style="grid-area:ba-outdoor">[[File:BA_Terrain_Outdoor.png|36px|城镇战|link=]]</div><div class="ba-terrain-rating-text" style="grid-area:ba-outdoor-rank-text">{{{城镇战|}}}</div><div class="ba-terrain-rating-icon" style="grid-area:ba-outdoor-rank-icon">[[File:BA_TerRat_{{{城镇战|}}}.png|36px|城镇战战斗力为{{{城镇战|}}}|link=]]</div>
+<div class="ba-terrain-icon" style="grid-area:ba-desert">[[File:BA_Terrain_Desert.png|36px|野战|link=]]</div><div class="ba-terrain-rating-text" style="grid-area:ba-desert-rank-text">{{{野战|}}}</div><div class="ba-terrain-rating-icon" style="grid-area:ba-desert-rank-icon">[[File:BA_TerRat_{{{野战|}}}.png|36px|野战战斗力为{{{野战|}}}|link=]]</div>
+<div class="ba-terrain-icon" style="grid-area:ba-indoor">[[File:BA_Terrain_Indoor.png|36px|室内战|link=]]</div><div class="ba-terrain-rating-text" style="grid-area:ba-indoor-rank-text">{{{室内战|}}}</div><div class="ba-terrain-rating-icon" style="grid-area:ba-indoor-rank-icon">[[File:BA_TerRat_{{{室内战|}}}.png|36px|室内战战斗力为{{{室内战|}}}|link=]]</div></div>
+<div class="ba-outfit">
+<div>{{#if:{{{装备1|}}}|{{蔚蓝档案材料|{{{装备1}}}|type=Eq|num=LV.1 解锁}}|装备1<br/>（未完善）}}</div>
+<div>{{#if:{{{装备2|}}}|{{蔚蓝档案材料|{{{装备2}}}|type=Eq|num=LV.15 解锁}}|装备2<br/>（未完善）}}</div>
+<div>{{#if:{{{装备3|}}}|{{蔚蓝档案材料|{{{装备3}}}|type=Eq|num=LV.35 解锁}}|装备3<br/>（未完善）}}</div>
+</div>
+</div>
+</div>
+</div>
+<div class="Tab">
+<div class="TabLabelText" style="justify-content:stretch;flex-grow:1;"><span style="color:#33DDFF;">武器</span></div>
+<div class="TabContentText">{{蔚蓝档案综合信息/canary
+|name = {{{Name|}}}
+|武器名称 = {{{武器名称|}}}
+|武器描述 = {{{武器描述|}}}
+|羁绊描述 = {{{羁绊描述|}}}
+|武器等级描述 = {{{武器等级描述|}}}
+|ter = {{{ter|}}}
+|terLv = {{{terLv|}}}
+|武器技能描述 = {{{武器技能描述|}}}
+}}</div>
+</div>
+<div class="Tab">
+<div class="TabLabelText" style="justify-content:stretch;flex-grow:1;"><span style="color:#33DDFF;">技能</span></div>
+<div class="TabContentText">{{蔚蓝档案技能/canary
+|name={{{Name|}}}
+|攻击类型 = {{{攻击类型|}}}
+|EX技能名称 = {{{EX技能名称|}}}
+|基本技能名称 = {{{基本技能名称|}}}
+|强化技能名称 = {{{强化技能名称|}}}
+|子技能名称 = {{{子技能名称|}}}
+|EX技能编号 = {{{EX技能编号|}}}
+|基本技能编号 = {{{基本技能编号|}}}
+|强化技能编号 = {{{强化技能编号|}}}
+|子技能编号 = {{{子技能编号|}}}
+|EX技能描述 = {{{EX技能描述|}}}
+|COST = {{{COST|}}}
+|基本技能描述 = {{{基本技能描述|}}}
+|强化技能描述 = {{{强化技能描述|}}}
+|子技能描述 = {{{子技能描述|}}}
+}}</div>
+</div>
+<div class="Tab">
+<div class="TabLabelText" style="justify-content:stretch;flex-grow:1;"><span style="color:#33DDFF;">材料</span></div>
+<div class="TabContentText">{{蔚蓝档案技能材料
+|ex1 = {{{ex1|}}}
+|ex2 = {{{ex2|}}}
+|ex3 = {{{ex3|}}}
+|ex4 = {{{ex4|}}}
+|otr1 = {{{otr1|}}}
+|otr2 = {{{otr2|}}}
+|otr3 = {{{otr3|}}}
+|otr4 = {{{otr4|}}}
+|otr5 = {{{otr5|}}}
+|otr6 = {{{otr6|}}}
+|otr7 = {{{otr7|}}}
+|otr8 = {{{otr8|}}}
+|otr9 = {{{otr9|}}}
+}}</div>
+</div>
+</div>
+</div>
+</div><div class="ba-charbg ba-bg ba-bg-{{#if:{{{bg|}}} | {{{bg|}}} | {{#switch:{{{学校|}}}
+|阿拜多斯高中=Abydos
+|格黑娜学园=Gehenna
+|千年科学学园=Millenium
+|三一综合学园=Trinity
+|百鬼夜行联合学园=Hyakkiyako
+|山海经高级中学=Shanhaijing
+|赤冬联邦学园=RedWinter
+|女武神警察学园=Valkyrie
+|SRT特殊学园=SRT
+|阿里乌斯分校=Arius
+|#default=Other}}}}"></div></div></includeonly>
