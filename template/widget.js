@@ -2,6 +2,7 @@
 window.RLQ = window.RLQ || [];
 window.RLQ.push(async () => {
     const studentStatList = ['MaxHP','AttackPower','DefensePower','HealPower','AccuracyPoint','DodgePoint','CriticalPoint','CriticalChanceResistPoint','CriticalDamageRate','CriticalDamageResistRate','StabilityPoint','Range','OppressionPower','OppressionResist','HealEffectivenessRate','AmmoCount', 'AmmoCost'];
+    const zhNumbers = ['零', '一', '二', '三', '四', '五']
 
     await mw.loader.using(["mediawiki.api", "ext.gadget.LocalObjectStorage"]);
     const storage = new LocalObjectStorage("ba-charinfo");
@@ -174,11 +175,19 @@ window.RLQ.push(async () => {
         }
     }
 
-    /*function recalculateStats(character, level = 1, stargrade){//还是按卡面现实
+    function recalculateStats($el, level, character, stargrade){//还是按卡面现实
         if(!stargrade) stargrade = character.Rate;
-        student = new CharacterStats(character, level, stargrade)
-        return student;
-    }*/
+        //let level = $el.find(".bachar-char-expbar");
+        let studentStats = new CharacterStats(character, level, stargrade);
+
+        studentStatList.forEach(statname => {
+            if(statname == "CriticalDamageRate"){
+                var statCriticalRate = studentStats.stats[statname][0] / 100; //应该是0.01？
+                $el.find(`.bachar-stats-CriticalDamageRate .bachar-stats-value`).text(`${statCriticalRate}\%`);
+            }else $el.find(`.bachar-stats-${statname} .bachar-stats-value`).text(studentStats.stats[statname][0])
+        })
+        return;
+    }
 
     $(".bachar-container").each(async (_, ele) => {
         const $ele = $(ele);
@@ -197,11 +206,36 @@ window.RLQ.push(async () => {
             }
         }
         $ele.data("ba-stats", new CharacterStats(character));
-        var studentdata = new CharacterStats(character)
+        let studentStats = new CharacterStats(character)
+
+        //初始化基本信息
+        /*let imageUrl = "";
+        await mw.loader.using(["mediawiki.api", "ext.gadget.LocalObjectStorage"]);
+        const api = new mw.Api()
+        (
+            await api.get({
+                "action": "query",
+                "prop": "imageinfo",
+                "titles": "File:BA_Pic_Star_3.png",
+                "iiprop": "url"
+            })
+        ).query.pages.forEach((key, imageData) => {
+            imageUrl = imageData.imageinfo.url;
+        });
+        console.log(imageUrl);*/
+        //var imageHash = md5(`BA_Pic_Star_${character.Rate}\.png`)
+        //var starImageUrl = `https://img.moegirl.org.cn\/common\/thumb/${imageHash.slice(0, 1)}/${imageHash.slice(0, 2)}/BA_Pic_Star_${character.Rate}.png`
+        /*$ele.find(".bachar-char-star").replaceWith(
+            `<span class="bachar-char-star bachar-all-unitalic"><img alt="初始星级为${zhNumbers[character.Rate]}星" src="${starImageUrl}/50px-BA_Pic_Star_${character.Rate}.png" title="初始星级为${zhNumbers[character.Rate]}星" width="50" height="15" srcset="${starImageUrl}" 1.5x" data-file-width="65" data-file-height="20"></span>`
+        );*/
+        // 临时性 初始化数据
+        studentStatList.forEach(statname => {
+            $ele.find(`.bachar-stats-${statname} .bachar-stats-value`).text(studentStats.getTotal(statname))
+        })
 
         // Replace slider
         $ele.find(".bachar-char-expbar").replaceWith(
-            '<input class="bachar-char-expbar bachar-all-unitalic" type="range" min="1" max="83" value="1" step="1" />',
+            '<input class="bachar-char-expbar bachar-all-unitalic" oninput="" type="range" min="1" max="83" value="1" step="1" />',
         );
         const $expLv = $ele.find(".bachar-char-explv"),
             $expBar = $ele.find(".bachar-char-expbar");
@@ -224,18 +258,9 @@ window.RLQ.push(async () => {
             cursor: pointer;
         }`);
 
-        // 临时性
-        studentStatList.forEach(statname => {
-            $ele.find(`.bachar-stats-${statname} .bachar-stats-value`).text(studentdata.stats[statname][0])
-        })
-
         $expBar.on("input", () => {
             $expLv.text($expBar.val());
-            studentdata = new CharacterStats(character, $expBar.val())
-            studentStatList.forEach(statname => {
-                $ele.find(`.bachar-stats-${statname} .bachar-stats-value`).text(studentdata.stats[statname][0])
-            })
-            //$ele.find(`.bachar-stats-CriticalDamageRate .bachar-stats-value`).text(`${studentdata.stats[CriticalDamageRate][0]/100}%`)
+            recalculateStats($ele, $expBar.val(), character)
         }).trigger("input");
     });
 });
