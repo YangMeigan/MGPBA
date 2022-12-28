@@ -99,6 +99,10 @@
 		"Name": "黑馆羽留奈",
 		"Club": "美食研究会"
 	},
+	"Haruna_Newyear": {
+		"Name": "黑馆羽留奈(新年)",
+		"Club": "美食研究会"
+	},
 	"Izumi": {
 		"Name": "狮子堂泉",
 		"Club": "美食研究会"
@@ -111,12 +115,20 @@
 		"Name": "赤司淳子",
 		"Club": "美食研究会"
 	},
+	"Zunko_Newyear": {
+		"Name": "赤司淳子(新年)",
+		"Club": "美食研究会"
+	},
 	"Akari": {
 		"Name": "鳄渊亚伽里",
 		"Club": "美食研究会"
 	},
 	"Fuuka": {
 		"Name": "爱清风华",
+		"Club": "供给部"
+	},
+	"Fuuka_Newyear": {
+		"Name": "爱清风华(新年)",
 		"Club": "供给部"
 	},
 	"Juri": {
