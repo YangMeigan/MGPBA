@@ -232,6 +232,14 @@ window.RLQ.push(async () => {
         studentStatList.forEach(statname => {
             $ele.find(`.bachar-stats-${statname} .bachar-stats-value`).text(studentStats.getTotal(statname))
         })
+        const api = new mw.Api();
+        imageUrl = Object.values((await api.get({
+            "action": "query",
+            "prop": "imageinfo",
+            "titles": "File:BA_Pic_Star_3.png",
+            "iiprop": "url"
+        })).query.pages)[0].imageinfo.url;
+        console.log(imageUrl)
 
         // Replace slider
         $ele.find(".bachar-char-expbar").replaceWith(
