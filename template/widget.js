@@ -1,7 +1,25 @@
 "use strict";
 window.RLQ = window.RLQ || [];
 window.RLQ.push(async () => {
-    const studentStatList = ['MaxHP','AttackPower','DefensePower','HealPower','AccuracyPoint','DodgePoint','CriticalPoint','CriticalChanceResistPoint','CriticalDamageRate','CriticalDamageResistRate','StabilityPoint','Range','OppressionPower','OppressionResist','HealEffectivenessRate','AmmoCount', 'AmmoCost'];
+    const studentStatList = [
+        'MaxHP',
+        'AttackPower',
+        'DefensePower',
+        'HealPower',
+        'AccuracyPoint',
+        'DodgePoint',
+        'CriticalPoint',
+        'CriticalChanceResistPoint',
+        'CriticalDamageRate',
+        'CriticalDamageResistRate',
+        'StabilityPoint',
+        'Range',
+        'OppressionPower',
+        'OppressionResist',
+        'HealEffectivenessRate',
+        'AmmoCount', 
+        'AmmoCost'
+    ];
     const zhNumbers = ['零', '一', '二', '三', '四', '五']
 
     await mw.loader.using(["mediawiki.api", "ext.gadget.LocalObjectStorage"]);
@@ -182,9 +200,8 @@ window.RLQ.push(async () => {
 
         studentStatList.forEach(statname => {
             if(statname == "CriticalDamageRate"){
-                var statCriticalRate = studentStats.stats[statname][0] / 100; //应该是0.01？
-                $el.find(`.bachar-stats-CriticalDamageRate .bachar-stats-value`).text(`${statCriticalRate}\%`);
-            }else $el.find(`.bachar-stats-${statname} .bachar-stats-value`).text(studentStats.stats[statname][0])
+                $el.find(`.bachar-stats-CriticalDamageRate .bachar-stats-value`).text(`${studentStats.stats[statname][0] / 100}\%`);
+            }else $el.find(`.bachar-stats-${statname} .bachar-stats-value`).text(studentStats.getTotal(statname))
         })
         return;
     }
@@ -232,14 +249,6 @@ window.RLQ.push(async () => {
         studentStatList.forEach(statname => {
             $ele.find(`.bachar-stats-${statname} .bachar-stats-value`).text(studentStats.getTotal(statname))
         })
-        const api = new mw.Api();
-        imageUrl = Object.values((await api.get({
-            "action": "query",
-            "prop": "imageinfo",
-            "titles": "File:BA_Pic_Star_3.png",
-            "iiprop": "url"
-        })).query.pages)[0].imageinfo.url;
-        console.log(imageUrl)
 
         // Replace slider
         $ele.find(".bachar-char-expbar").replaceWith(
