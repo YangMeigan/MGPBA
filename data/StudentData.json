@@ -239,6 +239,10 @@
 		"Name": "一之濑明日奈(兔女郎)",
 		"Club": "C&C"
 	},
+	"Toki": {
+		"Name": "飞鸟马时",
+		"Club": "C&C"
+	},
 	"Sumire": {
 		"Name": "乙花堇",
 		"Club": "训练部"
@@ -249,6 +253,10 @@
 	},
 	"Mika": {
 		"Name": "圣园弥香",
+		"Club": "茶会"
+	},
+	"Nagisa": {
+		"Name": "桐藤渚",
 		"Club": "茶会"
 	},
 	"Hifumi": {
@@ -353,6 +361,10 @@
 	},
 	"Mari_Sportsuit": {
 		"Name": "伊落玛丽(体操服)",
+		"Club": "修女会"
+	},
+	"Sakurako": {
+		"Name": "歌住樱子",
 		"Club": "修女会"
 	},
 	"Shizuko": {

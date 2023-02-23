@@ -27,6 +27,7 @@
 	"CH0124": "Meru",
 	"CH0125": "Meru_Hotspring",
 	"CH0135": "Rumi",
+	"CH0139": "Kisaki",
 	"CH0137": "Kokona",
 	"CH0141": "Fubuki",
 	"CH0144": "Saki",
@@ -34,6 +35,7 @@
 	"CH0152": "Mine",
 	"CH0155": "Natsu",
 	"CH0156": "Iroha",
+	"CH0158": "Rio",
 	"CH0159": "Himari",
 	"CH0160": "Chihiro",
 	"CH0162": "Koyuki",
@@ -56,6 +58,7 @@
 	"CH0183": "Mimori_Swimsuit",
 	"CH0184": "Yuuka_Sportsuit",
 	"CH0186": "Mari_Sportsuit",
+	"CH0187": "Toki",
 	"CH0188": "Shiroko_Swimsuit",
 	"CH0189": "Serika_Swimsuit",
 	"CH0190": "Hasumi_Sportsuit",
@@ -66,5 +69,6 @@
 	"CH0195": "Hanae_Christmas",
 	"CH0196": "Akari_Newyear",
 	"CH0197": "Izumi_Newyear",
+	"CH0199": "Shiroko_Black",
 	"CH9999": "Miku"
 }
