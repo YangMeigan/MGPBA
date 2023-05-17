@@ -83,6 +83,10 @@
 		"Name": "鬼方佳世子",
 		"Club": "征信社 68"
 	},
+	"Kayoko_Newyear": {
+		"Name": "鬼方佳世子(新年)",
+		"Club": "征信社 68"
+	},
 	"Mutsuki": {
 		"Name": "浅黄无月",
 		"Club": "征信社 68"
@@ -93,6 +97,10 @@
 	},
 	"Haruka": {
 		"Name": "伊草遥香",
+		"Club": "征信社 68"
+	},
+	"Haruka_Newyear": {
+		"Name": "伊草遥香(新年)",
 		"Club": "征信社 68"
 	},
 	"Haruna": {
@@ -167,8 +175,16 @@
 		"Name": "花冈柚子",
 		"Club": "游戏开发部"
 	},
+	"Yuzu_Maid": {
+		"Name": "花冈柚子(女仆)",
+		"Club": "游戏开发部"
+	},
 	"Aris": {
 		"Name": "天童爱丽丝",
+		"Club": "游戏开发部"
+	},
+	"Aris_Maid": {
+		"Name": "天童爱丽丝(女仆)",
 		"Club": "游戏开发部"
 	},
 	"Momoi": {
@@ -245,6 +261,10 @@
 	},
 	"Toki": {
 		"Name": "飞鸟马时",
+		"Club": "C&C"
+	},
+	"Toki_Bunny": {
+		"Name": "飞鸟马时(兔女郎)",
 		"Club": "C&C"
 	},
 	"Sumire": {
@@ -355,6 +375,10 @@
 		"Name": "守月铃美",
 		"Club": "三一自卫队"
 	},
+	"Reisa": {
+		"Name": "宇泽玲纱",
+		"Club": "三一自卫队"
+	},
 	"Hinata": {
 		"Name": "若叶日向",
 		"Club": "修女会"
@@ -394,6 +418,10 @@
 	"Tsubaki": {
 		"Name": "春日椿",
 		"Club": "执行部"
+	},
+	"Kaho": {
+		"Name": "桑山嘉穗",
+		"Club": "阴阳部"
 	},
 	"Chise": {
 		"Name": "和乐知世",
