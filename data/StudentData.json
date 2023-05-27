@@ -73,35 +73,35 @@
 	},
 	"Aru": {
 		"Name": "陆八魔亚瑠",
-		"Club": "征信社 68"
+		"Club": "便利屋 68"
 	},
 	"Aru_Newyear": {
 		"Name": "陆八魔亚瑠(新年)",
-		"Club": "征信社 68"
+		"Club": "便利屋 68"
 	},
 	"Kayoko": {
 		"Name": "鬼方佳世子",
-		"Club": "征信社 68"
+		"Club": "便利屋 68"
 	},
 	"Kayoko_Newyear": {
 		"Name": "鬼方佳世子(新年)",
-		"Club": "征信社 68"
+		"Club": "便利屋 68"
 	},
 	"Mutsuki": {
 		"Name": "浅黄无月",
-		"Club": "征信社 68"
+		"Club": "便利屋 68"
 	},
 	"Mutsuki_Newyear": {
 		"Name": "浅黄无月(新年)",
-		"Club": "征信社 68"
+		"Club": "便利屋 68"
 	},
 	"Haruka": {
 		"Name": "伊草遥香",
-		"Club": "征信社 68"
+		"Club": "便利屋 68"
 	},
 	"Haruka_Newyear": {
 		"Name": "伊草遥香(新年)",
-		"Club": "征信社 68"
+		"Club": "便利屋 68"
 	},
 	"Haruna": {
 		"Name": "黑馆羽留奈",
@@ -462,6 +462,14 @@
 	"Shun_Small": {
 		"Name": "春原旬(幼女)",
 		"Club": "梅花园"
+	},
+	"Mina": {
+		"Name": "近卫弥奈",
+		"Club": "玄龙门"
+	},
+	"Rumi": {
+		"Name": "朱城瑠美",
+		"Club": "玄武商会"
 	},
 	"Saya": {
 		"Name": "药子沙耶",
