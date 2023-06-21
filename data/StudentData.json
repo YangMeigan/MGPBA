@@ -284,11 +284,11 @@
 		"Club": "茶会"
 	},
 	"Hifumi": {
-		"Name": "阿慈谷日步美",
+		"Name": "阿慈谷日富美",
 		"Club": "补课部"
 	},
 	"Hifumi_Swimsuit": {
-		"Name": "阿慈谷日步美(泳装)",
+		"Name": "阿慈谷日富美(泳装)",
 		"Club": "补课部"
 	},
 	"Azusa": {
@@ -440,11 +440,11 @@
 		"Club": "忍法研究部"
 	},
 	"Tsukuyo": {
-		"Name": "大野筑夜",
+		"Name": "大野月夜",
 		"Club": "忍法研究部"
 	},
 	"Michiru": {
-		"Name": "千鸟满",
+		"Name": "千鸟三千留",
 		"Club": "忍法研究部"
 	},
 	"Wakamo": {
@@ -507,6 +507,10 @@
 		"Name": "间宵时雨",
 		"Club": "227号特别班"
 	},
+	"Minori": {
+		"Name": "安守实里",
+		"Club": "劳务部"
+	},
 	"Kirino": {
 		"Name": "中务桐乃",
 		"Club": "生活安全局"
@@ -523,12 +527,24 @@
 		"Name": "月雪宫子",
 		"Club": "Rabbit 小队"
 	},
+	"Miyako_Swimsuit": {
+		"Name": "月雪宫子(泳装)",
+		"Club": "Rabbit 小队"
+	},
 	"Saki": {
 		"Name": "空井咲",
 		"Club": "Rabbit 小队"
 	},
+	"Saki_Swimsuit": {
+		"Name": "空井咲(泳装)",
+		"Club": "Rabbit 小队"
+	},
 	"Miyu": {
 		"Name": "霞泽美游",
+		"Club": "Rabbit 小队"
+	},
+	"Miyu_Swimsuit": {
+		"Name": "霞泽美游(泳装)",
 		"Club": "Rabbit 小队"
 	},
 	"Moe": {
