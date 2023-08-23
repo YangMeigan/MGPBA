@@ -7,6 +7,10 @@
 		"Name": "砂狼白子(骑行)",
 		"Club": "对策委员会"
 	},
+	"Shiroko_Swimsuit": {
+		"Name": "砂狼白子(泳装)",
+		"Club": "对策委员会"
+	},
 	"Hoshino": {
 		"Name": "小鸟游星野",
 		"Club": "对策委员会"
@@ -303,33 +307,41 @@
 		"Name": "下江小春",
 		"Club": "补课部"
 	},
+	"Koharu_Swimsuit": {
+		"Name": "下江小春(泳装)",
+		"Club": "补课部"
+	},
 	"Hanako": {
 		"Name": "浦和花子",
 		"Club": "补课部"
 	},
+	"Hanako_Swimsuit": {
+		"Name": "浦和花子(泳装)",
+		"Club": "补课部"
+	},
 	"Tsurugi": {
 		"Name": "剑先弦生",
-		"Club": "实现正义部"
+		"Club": "正义实现委员会"
 	},
 	"Tsurugi_Swimsuit": {
 		"Name": "剑先弦生(泳装)",
-		"Club": "实现正义部"
+		"Club": "正义实现委员会"
 	},
 	"Mashiro": {
 		"Name": "静山麻白",
-		"Club": "实现正义部"
+		"Club": "正义实现委员会"
 	},
 	"Mashiro_Swimsuit": {
 		"Name": "静山麻白(泳装)",
-		"Club": "实现正义部"
+		"Club": "正义实现委员会"
 	},
 	"Hasumi": {
 		"Name": "羽川莲实",
-		"Club": "实现正义部"
+		"Club": "正义实现委员会"
 	},
 	"Hasumi_Sportsuit": {
 		"Name": "羽川莲实(体操服)",
-		"Club": "实现正义部"
+		"Club": "正义实现委员会"
 	},
 	"Natsu": {
 		"Name": "柚鸟夏",
@@ -345,26 +357,30 @@
 	},
 	"Hanae": {
 		"Name": "朝颜花绘",
-		"Club": "救援骑士团"
+		"Club": "救护骑士团"
 	},
 	"Hanae_Christmas": {
 		"Name": "朝颜花绘(圣诞节)",
-		"Club": "救援骑士团"
+		"Club": "救护骑士团"
 	},
 	"Serina": {
 		"Name": "鹫见芹奈",
-		"Club": "救援骑士团"
+		"Club": "救护骑士团"
 	},
 	"Serina_Christmas": {
 		"Name": "鹫见芹奈(圣诞节)",
-		"Club": "救援骑士团"
+		"Club": "救护骑士团"
 	},
 	"Mine": {
 		"Name": "苍森美弥",
-		"Club": "救援骑士团"
+		"Club": "救护骑士团"
 	},
 	"Ui": {
 		"Name": "古关忧",
+		"Club": "图书部"
+	},
+	"Ui_Swimsuit": {
+		"Name": "古关忧(泳装)",
 		"Club": "图书部"
 	},
 	"Shimiko": {
@@ -381,6 +397,10 @@
 	},
 	"Hinata": {
 		"Name": "若叶日向",
+		"Club": "修女会"
+	},
+	"Hinata_Swimsuit": {
+		"Name": "若叶日向(泳装)",
 		"Club": "修女会"
 	},
 	"Mari": {
@@ -409,6 +429,10 @@
 	},
 	"Mimori": {
 		"Name": "水羽三森",
+		"Club": "执行部"
+	},
+	"Mimori_Swimsuit": {
+		"Name": "水羽三森(泳装)",
 		"Club": "执行部"
 	},
 	"Kaede": {
@@ -502,6 +526,14 @@
 	"Nodoka_Hotspring": {
 		"Name": "天见和香(温泉)",
 		"Club": "227号特别班"
+	},
+	"Meru": {
+		"Name": "姬木爱瑠",
+		"Club": "知识解放前线"
+	},
+	"Momiji": {
+		"Name": "秋泉红叶",
+		"Club": "知识解放前线"
 	},
 	"Shigure": {
 		"Name": "间宵时雨",
