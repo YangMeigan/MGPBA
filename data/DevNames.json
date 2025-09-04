@@ -164,6 +164,8 @@
 	"CH0290": "Fuuka_Casual",
 	"CH0291": "Hasumi_Swimsuit",
 	"CH0292": "Ichika_Swimsuit",
+	"CH0293": "Nagisa_Swimsuit",
+	"CH0294": "Mika_Swimsuit",
 	"CH0295": "Seia_Swimsuit",
 	"CH0300": "Kikyou_Swimsuit",
 	"CH0301": "Yukari_Swimsuit",
@@ -183,7 +185,8 @@
 	"CH0328": "Kasumi_Swimsuit",
 	"CH0329": "Megu_Swimsuit",
 	"CH9996": "Ruiko",
-	"CH9997": "Misaki",
+	"CH9997": "Misaki_RT",
 	"CH9998": "Mikoto",
 	"CH9999": "Miku"
 }
+
